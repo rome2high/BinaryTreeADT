@@ -10,7 +10,7 @@ public class TreePanel extends JPanel{
 	public TreePanel() {
 		binaryTree = new BinaryTree();
 		setPreferredSize(new Dimension(WIDTH, HEIGHT));
-		setBackground(Color.BLUE);
+		setBackground(Color.GREEN);
 	}
 	
 	public void insertNode(int e) {

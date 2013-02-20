@@ -43,7 +43,7 @@ public class LayoutPanel extends JPanel{
 				try{
 					int value = Integer.parseInt(st);
 					treePanel.insertNode(value);
-					treePanel.repaint();
+					treePanel.repaint();		//this will call TreePanel.paintComponent()
 				}
 				catch(NumberFormatException ex){
 					outputLabel.setText("The input is not an integer, please re-enter an integer.");

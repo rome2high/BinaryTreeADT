@@ -1,3 +1,5 @@
+import java.io.Console;
+
 public class BinaryTree implements BinaryTreeADT {
 	protected  BTNode  root;
 	protected  int  size;
@@ -66,8 +68,11 @@ public class BinaryTree implements BinaryTreeADT {
 		
 	public void addNode(int e) { 
 	    	BTNode n = new BTNode(e);
-	  	queue.enque(n);
+	  	queue.enque(n); //insert n into queue
 	    	//finish the rest
+	  	//turn queue to binary tree
+	  	
+	  	
 
 
 	}         

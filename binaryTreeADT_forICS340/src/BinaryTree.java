@@ -70,8 +70,27 @@ public class BinaryTree implements BinaryTreeADT {
 	    	BTNode n = new BTNode(e);
 	  	queue.enque(n); //insert n into queue
 	    	//finish the rest
-	  	//turn queue to binary tree
+
+	  		BTNode tmpNode = new BTNode();
+	  		
+	  		tmpNode = (BTNode) queue.peek();
+	  		
+	  	if(root == null){		//test if root exist
+	  		root = n;
+	  		n.level = 0;		//start off level
+	  		
+	  	}
+	  	else
+	  	{
+	  		
+		  	n.parent = root;
+		  	n.level = n.parent.level + 1;
+		  	System.out.println(n.getParent());
+	  	}
 	  	
+	  	queue.deque();
+	  	
+	  	System.out.println(n.getParent());
 	  	
 
 

@@ -39,7 +39,7 @@ public class TreePanel extends JPanel{
 		if(!binaryTree.queue.isEmpty()){
 			for(i=0; i<binaryTree.queue.numOfNodes; i++){
 				q1.enque(binaryTree.queue.data[i]);			//add tree to queue (rmai)
-			}//for
+			}
 			while(!q1.isEmpty()||!q2.isEmpty()){
 				if(!q1.isEmpty()){
 					while(!q1.isEmpty()){

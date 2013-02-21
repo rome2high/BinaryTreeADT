@@ -68,19 +68,19 @@ public class BinaryTree implements BinaryTreeADT {
 		
 	public void addNode(int e) { 
 	    	BTNode n = new BTNode(e);
-	  	queue.enque(n); //insert n into queue
+	  	queue.enque(n); //insert n into queue; current node
 	    	//finish the rest
 	  		
 	  		BTNode frontNode = (BTNode) queue.peek();		//front node (first to go out)
 	  		
+	  		BTNode lastNode = (BTNode) queue.data[queue.rear - 2];
+	  		
 	  	if(root == null){		//test if root exist
 	  		root = n;
-	  		n.level = 0;		//start off level
-	  		
+	  		n.level = 0;		//start off level\
 	  	}
 	  	else
 	  	{
-	  		
 		  	n.parent = root;
 		  	n.level = n.parent.level + 1;
 		  	System.out.println(n.getParent());

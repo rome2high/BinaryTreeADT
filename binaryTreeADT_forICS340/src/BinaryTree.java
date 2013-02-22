@@ -84,6 +84,9 @@ public class BinaryTree implements BinaryTreeADT {
 	  	{
 	  		BTNode lastNode = (BTNode) queue.data[queue.rear - 2]; //assuming last node is parent of current node
 	  		
+	  		
+	  		//needing swap method?
+	  		
 	  		//if no parent > set last node is parent
 	  		
 	  			//parent.parent has right child? > add to parent.parent right child

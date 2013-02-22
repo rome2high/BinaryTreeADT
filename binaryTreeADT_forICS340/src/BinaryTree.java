@@ -82,7 +82,18 @@ public class BinaryTree implements BinaryTreeADT {
 	  	}
 	  	else
 	  	{
-	  		BTNode lastNode = (BTNode) queue.data[queue.rear - 2];
+	  		BTNode lastNode = (BTNode) queue.data[queue.rear - 2]; //assuming last node is parent of current node
+	  		
+	  		//if no parent > set last node is parent
+	  		
+	  			//parent.parent has right child? > add to parent.parent right child
+	  			
+	  				//parent left child? > add to left child
+	  		
+	  				//parent right child? > add to right child
+	  				
+	  				//else > add set current as node as its parent left child
+	  		
 		  	n.parent = root;
 		  	n.level = n.parent.level + 1;
 		  	n.x = n.parent.px - 30;
